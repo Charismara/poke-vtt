@@ -2,7 +2,7 @@
   "id": "pokevtt",
   "title": "Pokemon Virtual Tabletop",
   "description": "A system for playing a Pokemon Mystery Dungeon based tabletop game.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "compatibility": {
     "minimum": "13.347",
     "verified": "13"
@@ -20,7 +20,7 @@
     "pokevtt.mjs"
   ],
   "styles": [
-    "dnd5e.css"
+    "pokevtt.css"
   ],
   "documentTypes": {
     "ActiveEffect": {
@@ -112,20 +112,20 @@
       }
     },
     "RegionBehavior": {
-      "dnd5e.difficultTerrain": {},
-      "dnd5e.rotateArea": {}
+      "pokevtt.difficultTerrain": {},
+      "pokevtt.rotateArea": {}
     }
   },
   "packs": [
     {
       "name": "heroes",
       "label": "Starter Heroes",
-      "system": "dnd5e",
+      "system": "pokevtt",
       "path": "packs/heroes",
       "type": "Actor",
       "private": false,
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.1",
           "types": ["character"]
         }
@@ -134,12 +134,12 @@
     {
       "name": "monsters",
       "label": "Monsters (SRD)",
-      "system": "dnd5e",
+      "system": "pokevtt",
       "path": "packs/monsters",
       "type": "Actor",
       "private": false,
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.1",
           "types": ["npc"]
         }
@@ -148,12 +148,12 @@
     {
       "name": "items",
       "label": "Items (SRD)",
-      "system": "dnd5e",
+      "system": "pokevtt",
       "path": "packs/items",
       "type": "Item",
       "private": false,
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.1",
           "types": ["weapon", "equipment", "consumable", "tool", "loot", "feat", "container"]
         }
@@ -162,12 +162,12 @@
     {
       "name": "tradegoods",
       "label": "Trade Goods (SRD)",
-      "system": "dnd5e",
+      "system": "pokevtt",
       "path": "packs/tradegoods",
       "type": "Item",
       "private": false,
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.1",
           "types": ["loot"]
         }
@@ -176,12 +176,12 @@
     {
       "name": "spells",
       "label": "Spells (SRD)",
-      "system": "dnd5e",
+      "system": "pokevtt",
       "path": "packs/spells",
       "type": "Item",
       "private": false,
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sorting": "m",
           "sourceBook": "SRD 5.1",
           "types": ["spell"]
@@ -191,12 +191,12 @@
     {
       "name": "backgrounds",
       "label": "Backgrounds (SRD)",
-      "system": "dnd5e",
+      "system": "pokevtt",
       "path": "packs/backgrounds",
       "type": "Item",
       "private": false,
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.1",
           "types": ["background", "feat"]
         }
@@ -205,12 +205,12 @@
     {
       "name": "classes",
       "label": "Classes (SRD)",
-      "system": "dnd5e",
+      "system": "pokevtt",
       "path": "packs/classes",
       "type": "Item",
       "private": false,
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.1",
           "types": ["class"]
         }
@@ -219,12 +219,12 @@
     {
       "name": "subclasses",
       "label": "Subclasses (SRD)",
-      "system": "dnd5e",
+      "system": "pokevtt",
       "path": "packs/subclasses",
       "type": "Item",
       "private": false,
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.1",
           "types": ["subclass"]
         }
@@ -233,12 +233,12 @@
     {
       "name": "classfeatures",
       "label": "Class & Subclass Features (SRD)",
-      "system": "dnd5e",
+      "system": "pokevtt",
       "path": "packs/classfeatures",
       "type": "Item",
       "private": false,
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.1",
           "types": ["feat", "weapon"]
         }
@@ -247,12 +247,12 @@
     {
       "name": "races",
       "label": "Races (SRD)",
-      "system": "dnd5e",
+      "system": "pokevtt",
       "path": "packs/races",
       "type": "Item",
       "private": false,
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.1",
           "types": ["race", "feat"]
         }
@@ -261,12 +261,12 @@
     {
       "name": "monsterfeatures",
       "label": "Monster Features (SRD)",
-      "system": "dnd5e",
+      "system": "pokevtt",
       "path": "packs/monsterfeatures",
       "type": "Item",
       "private": false,
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.1",
           "types": ["feat", "weapon"]
         }
@@ -275,12 +275,12 @@
     {
       "name": "rules",
       "label": "Rules (SRD)",
-      "system": "dnd5e",
+      "system": "pokevtt",
       "path": "packs/rules",
       "type": "JournalEntry",
       "private": false,
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "display": "table-of-contents"
         }
       }
@@ -288,7 +288,7 @@
     {
       "name": "tables",
       "label": "Tables (SRD)",
-      "system": "dnd5e",
+      "system": "pokevtt",
       "path": "packs/tables",
       "type": "RollTable",
       "private": false,
@@ -303,7 +303,7 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "system": "dnd5e",
+      "system": "pokevtt",
       "flags": {
         "display": "table-of-contents"
       }
@@ -317,9 +317,9 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "system": "dnd5e",
+      "system": "pokevtt",
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.2",
           "types": ["class", "subclass", "feat"]
         }
@@ -334,9 +334,9 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "system": "dnd5e",
+      "system": "pokevtt",
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.2",
           "types": ["race", "background", "feat"]
         }
@@ -351,9 +351,9 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "system": "dnd5e",
+      "system": "pokevtt",
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.2",
           "types": ["feat"]
         }
@@ -368,9 +368,9 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "system": "dnd5e",
+      "system": "pokevtt",
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sorting": "m",
           "sourceBook": "SRD 5.2",
           "types": ["spell"]
@@ -386,9 +386,9 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "system": "dnd5e",
+      "system": "pokevtt",
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sourceBook": "SRD 5.2",
           "types": ["weapon", "equipment", "consumable", "tool", "loot", "feat", "container"]
         }
@@ -403,7 +403,7 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "system": "dnd5e"
+      "system": "pokevtt"
     },
     {
       "name": "actors24",
@@ -414,9 +414,9 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "system": "dnd5e",
+      "system": "pokevtt",
       "flags": {
-        "dnd5e": {
+        "pokevtt": {
           "sorting": "m",
           "sourceBook": "SRD 5.2"
         }
@@ -499,8 +499,8 @@
     },
     {
       "type": "setup",
-      "url": "systems/dnd5e/ui/official/dnd5e-repo.jpg",
-      "thumbnail": "systems/dnd5e/ui/official/dnd5e-thumbnail.jpg"
+      "url": "systems/pokevtt/ui/official/dnd5e-repo.jpg",
+      "thumbnail": "systems/pokevtt/ui/official/dnd5e-thumbnail.jpg"
     }
   ],
   "socket": true,
@@ -509,15 +509,15 @@
     "units": "ft"
   },
   "primaryTokenAttribute": "attributes.hp",
-  "background": "systems/dnd5e/ui/official/dnd5e-background.webp",
+  "background": "systems/pokevtt/ui/official/dnd5e-background.webp",
   "flags": {
     "compendiumArtMappings": {
-      "dnd5e": {
-        "mapping": "systems/dnd5e/json/fa-token-mapping.json",
+      "pokevtt": {
+        "mapping": "systems/pokevtt/json/fa-token-mapping.json",
         "credit": "<em>Token artwork by <a href=\"https://www.forgotten-adventures.net/\" target=\"_blank\" rel=\"noopener\">Forgotten Adventures</a>.</em>"
       }
     },
-    "dnd5e": {
+    "pokevtt": {
       "sourceBooks": {
         "SRD 5.1": "SOURCE.BOOK.SRD51",
         "SRD 5.2": "SOURCE.BOOK.SRD52"
@@ -527,7 +527,7 @@
     "compatibleMigrationVersion": "0.8",
     "hotReload": {
       "extensions": ["css", "hbs", "json"],
-      "paths": ["dnd5e.css", "templates", "lang"]
+      "paths": ["pokevtt.css", "templates", "lang"]
     }
   }
 }
